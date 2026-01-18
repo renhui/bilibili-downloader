@@ -73,6 +73,7 @@ class Panel {
 		const videoRadio = [...document.getElementsByName('video')].filter(ele => ele.checked)[0];
 		const audioRadio = [...document.getElementsByName('audio')].filter(ele => ele.checked)[0];
 		if (!videoRadio || !audioRadio) {
+			console.log(videoRadio, audioRadio);
 			showError("请分别选择一个视频和一个音频进行下载！");
 			return;
 		}
